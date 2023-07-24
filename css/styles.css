@@ -199,8 +199,7 @@ button {
 
 @media only screen and (min-width: 1157.98px) {
   .header {
-    padding-left: auto;
-    padding-right: auto;
+    padding: auto;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
@@ -432,25 +431,28 @@ button {
     padding-top: 112px;
     padding-bottom: 112px;
     background: var(--background-hero);
-
+    max-width: 428px;
     /*max-width: 1440px;*/
 
     margin: 0 auto;
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/mob-bg@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+    background-image: linear-gradient (
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/mob-bg@1x.jpg);
+      }
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+      background-image: linear-gradient (
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
         url(../images/mob-bg@2x.jpg);
+      }
     }
   }
 
@@ -464,7 +466,6 @@ button {
     max-width: 496px;
     margin: 0 auto 48px auto;
   }
-}
 
 @media only screen and (min-width: 768px) {
   .hero {
@@ -473,9 +474,11 @@ button {
     background: var(--background-hero);
     max-width: 767px;
     margin: 0 auto;
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+    background-image: 
+        linear-gradient (
+        rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/tab-bg@1x.jpg);
+        url(../images/tab-bg@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -485,9 +488,10 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/tab-bg@2x.jpg);
+      background-image: linear-gradient (
+       rgba(46, 47, 66, 0.7),
+       rgba(46, 47, 66, 0.7)),
+        url(./images/tab-bg@2x.jpg);
     }
   }
 
@@ -511,9 +515,10 @@ button {
     background: var(--background-hero);
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient (
+        rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/bgimg@1x.jpg);
+        url(./images/bgimg@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -523,11 +528,12 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+      background-image: linear-gradient (
+          rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(../images/bgimg@2x.jpg);
+          url(./images/bgimg@2x.jpg);
+      }
     }
-  }
 
   .hero-title {
     color: var(--color-white);
@@ -611,7 +617,7 @@ button {
     gap: 72px 24px;
   }
 
-  .list-feature {
+  .feature-list {
     width: calc((100% - 48px) / 2);
   }
 
@@ -652,7 +658,7 @@ button {
     margin-bottom: 8px;
   }
 
-  .list-feature {
+  .feature-list {
     width: calc((100% - 72px) / 4);
   }
 
