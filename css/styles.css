@@ -442,7 +442,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient (
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/mob-bg@1x.jpg);
@@ -452,7 +452,7 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (
+      background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/mob-bg@2x.jpg);
@@ -479,10 +479,10 @@ button {
     max-width: 767px;
     margin: 0 auto;
     background-image: 
-        linear-gradient (
+        linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(./images/tab-bg@1x.jpg);
+        url(../images/tab-bg@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -492,10 +492,10 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (
+      background-image: linear-gradient(
        rgba(46, 47, 66, 0.7),
        rgba(46, 47, 66, 0.7)),
-        url(./images/tab-bg@2x.jpg);
+        url(../images/tab-bg@2x.jpg);
     }
   }
 
@@ -519,10 +519,10 @@ button {
     background: var(--background-hero);
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient (
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(./images/bgimg@1x.jpg);
+        url(../images/bgimg@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -532,10 +532,10 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient (
+      background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-          url(./images/bgimg@2x.jpg);
+          url(../images/bgimg@2x.jpg);
       }
     }
 
@@ -924,7 +924,7 @@ button {
     align-items: center;
   }
 
-  .subscribe-form-lable {
+  .subscribe-form-label {
     width: 100%;
     height: 40px;
   }
@@ -965,6 +965,7 @@ button {
     letter-spacing: 0.32px;
     color: var(--color-white);
     margin-bottom: 16px;
+  
   }
 }
 
@@ -994,11 +995,12 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
+}
 
   .footer-container {
     margin-bottom: 72px;
     margin-right: 24px;
-  }
+  }  
 
   .page-footer {
     padding-top: 96px;
@@ -1016,7 +1018,7 @@ button {
     color: var(--color-white);
     margin-bottom: 16px;
   }
-}
+
 
 @media only screen and (min-width: 1157.98px) {
   .subscribe-form-input {
@@ -1095,7 +1097,6 @@ button {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
-  height: 72px;
 }
 
 .link-card-footer {
@@ -1160,6 +1161,7 @@ button {
 }
 
 .subscribe-form {
+  width: 100%;
   display: flex;
   gap: 24px;
 }
@@ -1370,8 +1372,10 @@ button {
   }
 
   .client-item {
-    width: 190px;
+  /*  width: 190px; */
     height: 88px;
+    width: calc((100% - 16px) / 2);
+
   }
 }
 
@@ -1385,12 +1389,16 @@ button {
   }
 
   .clients-item {
-    width: 168px;
+  width: 168px; 
     height: 88px;
+    width: calc((100% - 16px) / 3);
+
   }
 
+  
   .section-clients {
     padding: 96px 0;
+
   }
 }
 
@@ -1465,9 +1473,9 @@ button {
   top: 50%;
   left: 50%;
 
+  width: calc(100% - 30px);
   transform: translateX(-50%) translateY(-50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 408px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
@@ -1515,7 +1523,6 @@ button {
   text-align: center;
   margin-bottom: 16px;
 
-  width: 360px;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -1778,7 +1785,7 @@ button {
 }
 
 .mobile-contact-tel {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
