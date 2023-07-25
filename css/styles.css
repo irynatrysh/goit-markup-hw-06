@@ -998,8 +998,8 @@ button {
 }
 
   .footer-container {
-    margin-bottom: 72px;
-    margin-right: 24px;
+  /*  margin-bottom: 72px;
+    margin-right: 24px;*/
   }  
 
   .page-footer {
@@ -1374,7 +1374,7 @@ button {
   .client-item {
   /*  width: 190px; */
     height: 88px;
-    width: calc((100% - 16px) / 2);
+    width: calc((100% - 16px)/ 2);
 
   }
 }
@@ -1389,16 +1389,16 @@ button {
   }
 
   .clients-item {
-  width: 168px; 
+  /* width: 168px; */
     height: 88px;
-    width: calc((100% - 16px) / 3);
+    width: calc((100% - 48px)/ 3);
 
   }
 
   
   .section-clients {
     padding: 96px 0;
-
+    max-width: 584px;
   }
 }
 
